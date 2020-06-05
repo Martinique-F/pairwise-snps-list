@@ -1,8 +1,8 @@
 # pairwise-snps-list
-Get pairiwise SNP-distances from an FASTA alignment
+Get pairwise SNP-distances from a multi FASTA alignment
 
 ## Requirements
-To be able to load a FASTA-file in R and subsequently calculate the pairwise distance from it, the Biostrings package is required. You can download it from this site:
+To be able to load a FASTA-file in R and subsequently calculate the pairwise distances from it, the Biostrings package is required. You can download it from this site:
 https://bioconductor.org/packages/release/bioc/html/Biostrings.html
 
 ```
@@ -20,10 +20,11 @@ library(reshape2)
 ```
 
 ## Get pairwise distances as dataframe from alignment 
-To load a multi-FASTA-file into R, use:
+To load a multi FASTA file into R, use:
 ```
 file <- readDNAStringSet("test.fasta")
 head(file)
+
   A DNAStringSet instance of length 6
     width seq                                                               names               
 [1]    64 CGAAATAGCACACGTCATTGTACAGATCCATGCCGTCAGAATGTAACGGAAAGATGAATACCTG  dummy1
